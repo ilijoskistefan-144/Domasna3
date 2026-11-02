@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Македонска Формула - Гран при на Македонија</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topBar">
+        <div>
+            <h1>Македонска Формула</h1>
+            <p class="subtitle">Гран при на Македонија · Скопје</p>
+        </div>
+        <div class="lapBadge" id="lapCounter">Круг 0 / 10</div>
+    </header>
+
+    <main class="layout">
+
+        <section class="panel">
+            <h2>Тековен поредок</h2>
+            <div class="tableWrap">
+                <table class="board">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Возач</th>
+                            <th>Тим</th>
+                            <th>Гуми</th>
+                            <th>Вкупно време</th>
+                            <th>Заостанува</th>
+                            <th>Статус на старт</th>
+                            <th>Статус на крај</th>
+                        </tr>
+                    </thead>
+                    <tbody id="boardBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <aside class="panel">
+            <h2>Случувања на патека</h2>
+            <ul id="eventLog">
+                <li class="info">Трката уште не е започната.</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <section class="controls">
+        <button id="btnNext">Почни го следниот круг</button>
+        <button id="btnReset" class="secondary">Нова трка</button>
+        <div id="winnerBox" class="hidden"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
